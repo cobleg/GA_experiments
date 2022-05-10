@@ -7,4 +7,11 @@ More complex variants of sigmoid functions are then required, which in turn, are
 under stochastic environment. *Technological Forecasting & Social Change* 161 120285 ](https://www.sciencedirect.com/science/article/abs/pii/S0040162520311112?via%3Dihub)
 
 # Approach
-In this project, I'm testing various genetic algorithms to test the claims and explore a workable solution using the GA library in R
+In this project, I'm testing various genetic algorithms to test the claims and explore a workable solution using the GA library in R:
+
+Luca Scrucca (2013). GA: A Package for Genetic Algorithms in R. Journal of Statistical Software, 53(4),
+  1-37. https://doi.org/10.18637/jss.v053.i04
+
+Luca Scrucca (2017). On some extensions to GA package: hybrid optimisation, parallelisation and islands
+  evolution. The R Journal, 9/1, 187-206. https://doi.org/10.32614/RJ-2017-008
+
