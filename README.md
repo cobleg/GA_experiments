@@ -1,7 +1,9 @@
 # Problem statement
 Adoption of new technology (e.g. electric vehicles, solar power systems, behind-the-meter battery systems) invariably tracks along a non-linear time path. Diffusion models in the marketing science literature typically specify [sigmoid functions](https://en.wikipedia.org/wiki/Sigmoid_function) such as the [Bass Model](https://en.wikipedia.org/wiki/Bass_diffusion_model). However, when applying diffusion models to real-world data, we typically encounter the problem of insufficient flexibility in the sigmoid function.
 
-More complex variants of sigmoid functions are then required, which in turn, are more difficult to calibrate. However, recent technical papers demonstrate the use of genetic algorithms to quickly calibrate more complex sigmoid variations. One example is:
+More complex variants of sigmoid functions are then required, which in turn, are more difficult to calibrate. However, recent technical papers demonstrate the use of genetic algorithms to quickly calibrate more complex sigmoid variations. Some examples:
+
+[Rajkumar Venkatesan, V. Kumar (2002). A genetic algorithms approach to growth phase forecasting of wireless subscribers, *International Journal of Forecasting*, Volume 18, Issue 4, Pages 625-646, ISSN 0169-2070, https://doi.org/10.1016/S0169-2070(02)00070-5.](https://www.sciencedirect.com/science/article/pii/S0169207002000705)
 
 [Shakshi Singhal, Adarsh Anand, Ompal Singh (2020). Studying dynamic market size-based adoption modeling & product diffusion
 under stochastic environment. *Technological Forecasting & Social Change*, 161, 120285 ](https://www.sciencedirect.com/science/article/abs/pii/S0040162520311112?via%3Dihub)
