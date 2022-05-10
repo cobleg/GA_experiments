@@ -35,7 +35,7 @@ x_cum <- zoo(BM_1$Bass)
 x <- diff(x_cum)
 
 ga.BM <- ga(type='real-valued', lower=c(0,0,0), 
-             upper=c(1,1,sum(x)*2), popSize=1000, maxiter=1000, names=c('innovation', 'imitation', 'max number of adopters'),
+             upper=c(1,1,sum(x)*2), popSize=1000, maxiter=1000, names=c('innovation', 'imitation', 'max proportion of adopters'),
              keepBest=T, fitness = function(x) fitness(BM_1, x[1], x[2], x[3]))
 
 #### summary of the ga with solution
@@ -60,5 +60,5 @@ ga.model
 # Solution = 
 #   innovation imitation max number of adopters
 # [1,] 0.01309831 0.4926764              0.9958072
-# the estimated coefficients are close to the original: 
+# the estimated coefficients are close to the true values: 
 # p (innovation) = 0.01, q (imitation) = 0.5

@@ -6,6 +6,7 @@
 
 BASS <- function(p, q){
   t <- seq(1:20)
+  # this is the cumulative reduced-form solution (i.e. a function of parameters and time)
   F_t <- (1-exp(-(p+q)*t))/(1+q/p*exp(-(p+q)*t)) 
   return(F_t)
 }
