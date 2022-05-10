@@ -16,9 +16,10 @@ fitness <- function(data, p, q, m){
   attach(data, warn.conflicts=F)
   t <- seq(1:length(Bass))
   Horizon <- length(x)
+  #                  this is the sales rate form of the Bass model
   res = diff(Bass) - (m*((exp((p+q)*t)*p*(p+q)^2) / (p*exp((p+q)*t)+q)^2))
   
-    detach(data)
+  detach(data)
   
   return(-(sum(res**2)/Horizon))
   
