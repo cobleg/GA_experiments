@@ -11,6 +11,17 @@ BASS <- function(p, q){
   return(F_t)
 }
 
+BASS_Sales <- function(m, p, q, sigma){
+  time <- seq(1:20)
+  standard_normal <- rnorm(n=20, mean=0, sd=1)
+  # sales rate
+  s_t <- ((p+q)^2/p)*exp(-(p+q)*time) / (1 + (q/p)*exp(-(p+q)*time)^2) + sigma * exp(standard_normal)
+  return(s_t)
+}
+
 BM_1 <- data.frame( Bass = BASS(0.01, 0.5))
 
 plot(BM_1, type = "l", xlab = "Time", ylab = "Proportion of adopters", main = "Bass Model")
+
+BM_sales.1 <- data.frame( Sales = BASS_Sales(m = 1, p = 0.01, q = 0.5, sigma = 0.5))
+plot(BM_sales.1$Sales, type = "l", xlab = "Time", ylab = "Sales rate", main = "Bass Model Sales")
